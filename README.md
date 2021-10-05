@@ -42,7 +42,7 @@ Complete the 2021 challenge and earn a limited edition T-shirt.
 ```bash
    git clone https://github.com/your_username/Hactoberfest2021
 ```
-![hactoberfest2021](https://raw.githubusercontent.com/ElonReveMusk/ElonReveMusk/main/images/Screenshot%202021-10-05%20at%2012.10.39%20PM.png?token=AV5NMDNBN7Z3ZKO7G4XBR5TBLP22A)
+![hactoberfest2021](https://github.com/ElonReveMusk/ElonReveMusk/blob/main/images/Screenshot%202021-10-05%20at%2012.10.39%20PM.png)
 
  3. Open the folder in your favourite code editor and add your changes or modifications.
  
