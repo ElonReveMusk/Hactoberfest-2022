@@ -1,7 +1,7 @@
 # Hactoberfest2021
 ![Issues](https://img.shields.io/github/issues/ElonReveMusk/make-pull-request)
 ![Stars GitHub](https://img.shields.io/github/stars/ElonReveMusk/make-pull-request)
-![Forks](https://img.shields.io/github/forks/ElonReveMusk/Hacktoberfest2021/make-pull-request)
+![Forks](https://img.shields.io/github/forks/Hacktoberfest2021/make-pull-request)
 
 
 ## How to particpate in Hacktoberfest 2021
