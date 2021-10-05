@@ -1,8 +1,7 @@
 # Hactoberfest2021
-![Issues](https://img.shields.io/github/issues/twowaits/make-pull-request)
-![Stars GitHub](https://img.shields.io/github/stars/twowaits/make-pull-request)
-![Forks](https://img.shields.io/github/forks/twowaits/make-pull-request)
-[![project chat](https://img.shields.io/badge/telegram-join--chat-brightgreen)](https://t.me/joinchat/AAAAAFbbJqzUyF18Okx94A)
+![Issues](https://img.shields.io/github/issues/ElonReveMusk/make-pull-request)
+![Stars GitHub](https://img.shields.io/github/stars/ElonReveMusk/make-pull-request)
+![Forks](https://img.shields.io/github/forks/ElonReveMusk/make-pull-request)
 
 
 ## How to particpate in Hacktoberfest 2021
