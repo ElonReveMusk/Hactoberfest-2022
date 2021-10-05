@@ -24,7 +24,6 @@ If above link doesn't work watch [here](https://youtu.be/GuZpeobFsZw).
 
 - Make sure you take from latest code and don't edit any other file. 
 
-If you wish to stay updated, join our Whatsapp Group [here](https://chat.whatsapp.com/H0Hn3m1sgKHKeJdoCSb74A)
 
 Open source is changing the world- one pull request at a time.
 Hactoberfest encourages participation in open source community, which grows bigger every year. 
@@ -41,7 +40,7 @@ Complete the 2021 challenge and earn a limited edition T-shirt.
        
        a. Clone the repository
 ```bash
-   git clone https://github.com/your_username/make-pull-request
+   git clone https://github.com/your_username/Hactoberfest2021
 ```
 ![PicsArt_10-04-07 46 13](https://user-images.githubusercontent.com/64744084/95018081-e3a5c200-067a-11eb-8a51-acde725b0345.png)
 
