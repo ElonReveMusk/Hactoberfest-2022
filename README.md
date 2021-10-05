@@ -34,7 +34,7 @@ Complete the 2021 challenge and earn a limited edition T-shirt.
 
   1. Fork this repository to your account.
 
-![PicsArt_10-04-08 04 45](https://user-images.githubusercontent.com/64744084/95018364-e7d2df00-067c-11eb-9989-5ed586adb11b.jpg)
+![hactoberfest2021](https://user-images.githubusercontent.com/64744084/95018364-e7d2df00-067c-11eb-9989-5ed586adb11b.jpg)
 
   2. Go to Git Bash and Clone the forked repository using :
        
@@ -42,7 +42,7 @@ Complete the 2021 challenge and earn a limited edition T-shirt.
 ```bash
    git clone https://github.com/your_username/Hactoberfest2021
 ```
-![PicsArt_10-04-07 46 13](https://user-images.githubusercontent.com/64744084/95018081-e3a5c200-067a-11eb-8a51-acde725b0345.png)
+![hactoberfest2021](https://raw.githubusercontent.com/ElonReveMusk/ElonReveMusk/main/images/Screenshot%202021-10-05%20at%2012.10.39%20PM.png?token=AV5NMDNBN7Z3ZKO7G4XBR5TBLP22A)
 
  3. Open the folder in your favourite code editor and add your changes or modifications.
  
