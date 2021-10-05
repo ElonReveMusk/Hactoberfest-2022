@@ -1,4 +1,4 @@
-# Hactoberfest2021
+# Hactoberfest 2021
 ![Issues](https://img.shields.io/github/issues/ElonReveMusk/Hactoberfest-2021)
 ![Stars GitHub](https://img.shields.io/github/stars/ElonReveMusk/Hactoberfest-2021)
 ![Forks](https://img.shields.io/github/forks/ElonReveMusk/Hactoberfest-2021)
