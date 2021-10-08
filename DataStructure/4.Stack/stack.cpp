@@ -1,6 +1,8 @@
 #include <bits/stdc++.h>
 #include <iostream>
+
 #define MAX 1000
+
 using namespace std;
 
 class Stack
