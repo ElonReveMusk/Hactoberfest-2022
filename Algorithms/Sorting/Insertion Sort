@@ -1,0 +1,34 @@
+/* Insrtion sort */
+// Time Complexity: O(n^2) 
+// Auxiliary Space: O(1)
+
+#include <bits/stdc++.h>
+using namespace std;
+void insertion(int arr[],int n)
+{
+   for(int i=1;i<n;i++)
+    {
+        int j=i-1;
+        int key=arr[i];
+        while(j>=0 and arr[j]>key)
+        {
+             arr[j + 1] = arr[j];
+             j--;
+        }
+        arr[j+1]=key;
+    } 
+}
+int main()
+{
+ int n;
+ cout<<"Enter the size of array"<<endl;
+ cin>>n;
+ int arr[n];
+ for(int i=0;i<n;i++)
+ {  cout<<"Enter "<<i<<"th elements of array"<<endl;
+    cin>>arr[i];
+ }
+ insertion(arr,n);
+ for(int i=0;i<n;i++)
+ cout<<arr[i]<<" ";
+}
