@@ -1,0 +1,52 @@
+/* 
+Merge Intervals 
+time complexity= O(nlog(n)+n) //nlogn for sort and n for linear search
+space complexity=O(n)//for res vector
+*/
+
+#include <bits/stdc++.h>
+using namespace std;
+vector<vector<int>> merge(vector<vector<int>>& intervals) {
+        vector<vector<int>>res;
+        //sort the intervals on the basis of first element 
+        sort(intervals.begin(),intervals.end());
+        vector<int>temp;//take temporary vector
+        temp=intervals[0];//put first interval in temp
+        for(vector<int> it:intervals)
+        {
+            if(it[0]<=temp[1])
+                temp[1]=max(it[1],temp[1]);
+            else
+            {
+                res.push_back(temp);
+                temp=it;
+            }
+        }res.push_back(temp);
+        return res;
+    }
+    
+int main()
+{
+ int n;
+ cout<<"Enter the size of vector"<<endl;
+ cin>>n;
+
+ vector<vector<int>>intervals(n);
+ for(int i=0;i<n;i++)
+ { cout<<"Enter "<<i<<"th interval"<<endl;
+   int x,y;
+   cin>>x>>y;
+   intervals[i].push_back(x);
+   intervals[i].push_back(y);
+ }
+ vector<vector<int>>res=merge(intervals);
+ cout<<"Final non overlapping intervals"<<endl;
+ for(vector<int> it:res)
+ {
+     for(int j:it)
+     {
+        cout<<j<<" ";
+     }
+     cout<<endl;
+ }
+}
