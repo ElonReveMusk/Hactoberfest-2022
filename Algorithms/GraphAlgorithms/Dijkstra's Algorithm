@@ -1,0 +1,45 @@
+/* Dijkstra's Algorithm  */
+
+#include<bits/stdc++.h>
+#include<vector>
+using namespace std;
+int main()
+{
+    int n,e,source;
+    cin>>n>>e>>source;
+    vector<pair<int,int>>adj[n+1];
+    //making of weighted graph
+    for(int i=0;i<e;i++)
+    {   int u,v,x;
+        cin>>u>>v>>x;
+        adj[u].push_back({v,x});
+        adj[v].push_back({u,x});
+    }
+    vector<int>dist(n+1,INT_MAX);
+    dist[source]=0;
+    //dijkstra's Algorithm start from here
+    priority_queue <pair<int,int>, vector<pair<int,int>>, greater<pair<int,int>> > pq;
+    pq.push({0,source});
+    
+    while(pq.size()>0)
+    {
+        pair<int,int>temp;
+        temp=pq.top();
+        pq.pop();
+        int node =temp.second;
+        int dis =temp.first;
+        
+        vector<pair<int,int> >::iterator it;
+        for( it = adj[node].begin() ; it != adj[node].end() ; it++)
+        {   
+          int n1 = it->first;
+          int n2 = it->second;
+          if( dist[n1] > dist[node] + n2){
+            dist[n1] = dist[node] + n2;
+            pq.push(make_pair(dist[n1], n1));
+          }
+        }
+    }
+    for(int i=1;i<=n;i++)
+    cout<<dist[i]<<" ";
+}
