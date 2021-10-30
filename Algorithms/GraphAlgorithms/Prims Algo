@@ -1,0 +1,80 @@
+/*prims algo with priority queue*/
+
+#include<bits/stdc++.h>
+using namespace std;
+
+class node{
+  public:
+  int u,v,w;
+  node(int x,int y,int z)
+  {
+      u=x;
+      v=y;
+      w=z;
+  }
+};
+
+struct comp{
+bool operator()(node const& p1 ,node const& p2)
+{
+     return p1.w>p2.w;
+}
+};
+	//Function to find sum of weights of edges of the Minimum Spanning Tree.
+    int spanningTree(int V, vector<vector<int>> adj[])
+    {
+        // code here
+       priority_queue<node,vector<node>,comp>pq;
+       pq.push({0,-1,0});//u v wt
+       
+       vector<bool>visit(V,false);
+       int ans=0;
+       while(!pq.empty()){
+           node p=pq.top();
+           pq.pop();
+          // cout<<p.u <<" "<<p.v<<" "<<p.w<<endl;
+          
+           if(visit[p.u])continue;
+           visit[p.u]=true;
+           
+           if(p.v !=-1)
+           ans+=p.w;
+           
+           for(auto y:adj[p.u]){
+               if(!visit[y[0]]){
+                   pq.push({y[0],p.u,y[1]});
+               }
+           }
+       }
+       return ans;
+   }    
+
+
+int main()
+{
+    int t;
+    cin >> t;
+    while (t--) 
+    {
+        int V, E;
+        cin >> V >> E;
+        vector<vector<int>> adj[V];
+        int i=0;
+        
+        while (i++<E) {
+            int u, v, w;
+            cin >> u >> v >> w;
+            vector<int> t1,t2;
+            t1.push_back(v);
+            t1.push_back(w);
+            adj[u].push_back(t1);
+            t2.push_back(u);
+            t2.push_back(w);
+            adj[v].push_back(t2);
+        }
+        
+        
+    	int k=spanningTree(V, adj);
+    	cout<<k<<endl;
+    }
+}
