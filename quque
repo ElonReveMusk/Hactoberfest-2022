@@ -1,0 +1,15 @@
+//push and pop element
+#include<iostream>
+#includre<queue>
+Using namespace std;
+Int main()
+{
+      Queue<string<q;
+   q.push(“Naina”);
+   q.push(Kumari”);
+   cout<<”Size before pop”<<q.size()<<endl;
+   cout<<”First element”<<q.front()<<endl;
+   q.pop();
+   cout<<”First element”<<q.front()<<endl;
+   cout<,”Size after pop”<<q.size()<<endl;
+} 
