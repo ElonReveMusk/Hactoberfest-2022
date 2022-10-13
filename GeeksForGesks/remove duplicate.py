@@ -35,5 +35,3 @@ def removeDuplicatesFromString(str2):
 # Driver code
 str1 = "geeksforgeeks";
 print(removeDuplicatesFromString(str1));
-
-# This code is contributed by mits
