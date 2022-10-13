@@ -1,10 +1,10 @@
-# Hactoberfest 2021
+# Hactoberfest 2022
 ![Issues](https://img.shields.io/github/issues/ElonReveMusk/Hactoberfest-2021)
 ![Stars GitHub](https://img.shields.io/github/stars/ElonReveMusk/Hactoberfest-2021)
 ![Forks](https://img.shields.io/github/forks/ElonReveMusk/Hactoberfest-2021)
 
 
-## How to particpate in Hacktoberfest 2021
+## How to particpate in Hacktoberfest 2022
 
 How to register, some important rules to follow, which repos to contribute and other details in a 17 mins quick video on our Youtube Channel.
 
@@ -12,7 +12,7 @@ How to register, some important rules to follow, which repos to contribute and o
 
 If above link doesn't work watch [here](https://www.youtube.com/watch?v=XX0hOoSaI8Q).
 
-## Hacktoberfest 2021 Special
+## Hacktoberfest 2022 Special
 
 - We will be posting a problem daily at 10 AM related to languages like HTML/CSS, Python, JAVA, C++ till 30th Oct.
 
@@ -27,7 +27,7 @@ If above link doesn't work watch [here](https://www.youtube.com/watch?v=XX0hOoSa
 
 Open source is changing the world- one pull request at a time.
 Hactoberfest encourages participation in open source community, which grows bigger every year. 
-Complete the 2021 challenge and earn a limited edition T-shirt.
+Complete the 2022 challenge and earn a limited edition T-shirt.
 
 
 ## Steps to setup this Repository Locally
@@ -40,7 +40,7 @@ Complete the 2021 challenge and earn a limited edition T-shirt.
        
        a. Clone the repository
 ```bash
-   git clone https://github.com/your_username/Hactoberfest2021
+   git clone https://github.com/your_username/Hactoberfest2022
 ```
 ![hactoberfest2021](https://github.com/ElonReveMusk/ElonReveMusk/blob/main/images/Screenshot%202021-10-05%20at%2012.10.39%20PM.png)
 
