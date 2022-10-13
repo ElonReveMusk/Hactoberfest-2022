@@ -8,9 +8,9 @@
 
 How to register, some important rules to follow, which repos to contribute and other details in a 17 mins quick video on our Youtube Channel.
 
-[![](https://raw.githubusercontent.com/twowaits/make-pull-request/master/Images/Hacktoberfest_2021_YT_Thumbnail.png)](https://www.youtube.com/watch?v=XX0hOoSaI8Q)
+[![](https://raw.githubusercontent.com/twowaits/make-pull-request/master/Images/Hacktoberfest_2021_YT_Thumbnail.png)](https://www.youtube.com/watch?v=fxgY__YLNOQ)
 
-If above link doesn't work watch [here](https://www.youtube.com/watch?v=XX0hOoSaI8Q).
+If above link doesn't work watch [here](https://www.youtube.com/watch?v=fxgY__YLNOQ).
 
 ## Hacktoberfest 2022 Special
 
