@@ -1,0 +1,101 @@
+/* kruskal's algorithm */
+
+#include<bits/stdc++.h>
+using namespace std;
+
+//maintain a node for priority queue
+class node{
+  public:
+  int u,v,w;//u to v edge and w is wt.
+  node(int x,int y,int z)
+  {
+      u=x;
+      v=y;
+      w=z;
+  }
+};
+//important for priority queue comparable when we are using more than 1 attribute
+struct comp
+{
+bool operator()(node p1 ,node p2)
+{
+     return p1.w>p2.w;
+}
+};
+
+
+
+int find(int parent[],int i)
+	{
+	    if(parent[i]==i)
+	    return parent[i];
+	    
+	    return find(parent,parent[i]);
+	}
+	//Function to find sum of weights of edges of the Minimum Spanning Tree.
+    int spanningTree(int V, vector<vector<int>> adj[])
+    {
+        // code here
+       
+       priority_queue<node,vector<node>,comp>pq;
+       int k=V;
+       
+       for(int i=0;i<V;i++)
+       {
+           for(auto j :adj[i])
+           {   //cout<<i<<" "<<j[0]<<" "<<j[1]<<endl;
+               pq.push({i,j[0],j[1]});
+           }
+       }
+       //cout<<"nnnnnnnn "<<endl;
+       int parent[V];
+       for(int i=0;i<V;i++)
+       {
+           parent[i]=i;
+       }
+       //vector<bool>visit(V,false);
+       int ans=0;
+       while(k>0 and !pq.empty())
+       {
+           node p=pq.top();
+           pq.pop();
+           //cout<<p.u <<" "<<p.v<<" "<<p.w<<endl;
+           int sourceparent=find(parent,p.u);
+           int destparent=find(parent,p.v);
+           if(sourceparent != destparent)
+           {
+               ans+=p.w;
+               parent[sourceparent]=destparent;
+               k--;
+           }
+           
+       }
+       return ans;
+   }    
+
+
+int main()
+{
+    int t;
+    cin >> t;
+    while (t--) {
+        int V, E;
+        cin >> V >> E;
+        vector<vector<int>> adj[V];
+        int i=0;
+        while (i++<E) {
+            int u, v, w;
+            cin >> u >> v >> w;
+            vector<int> t1,t2;
+            t1.push_back(v);
+            t1.push_back(w);
+            adj[u].push_back(t1);
+            t2.push_back(u);
+            t2.push_back(w);
+            adj[v].push_back(t2);
+        }
+        
+       
+    	cout <<spanningTree(V, adj) << "\n";
+    }
+}
