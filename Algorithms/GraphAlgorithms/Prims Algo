@@ -1,0 +1,50 @@
+/*prims algo with priority queue*/
+
+#include<bits/stdc++.h>
+using namespace std;
+
+class node{
+  public:
+  int u,v,w;
+  node(int x,int y,int z)
+  {
+      u=x;
+      v=y;
+      w=z;
+  }
+};
+
+struct comp{
+bool operator()(node const& p1 ,node const& p2)
+{
+     return p1.w>p2.w;
+}
+};
+	//Function to find sum of weights of edges of the Minimum Spanning Tree.
+    int spanningTree(int V, vector<vector<int>> adj[])
+    {
+        // code here
+       priority_queue<node,vector<node>,comp>pq;
+       pq.push({0,-1,0});//u v wt
+       
+       vector<bool>visit(V,false);
+       int ans=0;
+       while(!pq.empty()){
+           node p=pq.top();
+           pq.pop();
+          // cout<<p.u <<" "<<p.v<<" "<<p.w<<endl;
+          
+           if(visit[p.u])continue;
+           visit[p.u]=true;
+           
+           if(p.v !=-1)
+           ans+=p.w;
+           
+           for(auto y:adj[p.u]){
+               if(!visit[y[0]]){
+                   pq.push({y[0],p.u,y[1]});
+               }
+           }
+       }
+       return ans;
+   }    
